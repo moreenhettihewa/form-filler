@@ -13,10 +13,10 @@
   };
 
   const selects = {
-    ddlGender1: "Female",  // Female or Male
+    ddlGender1: "Female", // Female or Male
     ddlNationality1: "200", // for sri lanka
     ddlBirthCountry1: "200",
-    ddlMaritalSts1: "2",  // 1 for single 2 for married
+    ddlMaritalSts1: "2", // 1 for single 2 for married
     ddlDelegate1: "1",
   };
 
@@ -42,10 +42,13 @@
     }
   }
 
-  
-  const checkbox = document.getElementById("chk1_2");
-  if (checkbox) {
-    checkbox.checked = true;
-    checkbox.dispatchEvent(new Event("change", { bubbles: true })); // trigger change event
+  const checks = ["chk1_2"];
+
+  for (const i = 0 ; i< checks.length ; i++) {
+    const checkbox = document.getElementById(checks[i]);
+    if (checkbox) {
+      checkbox.checked = true;
+      checkbox.dispatchEvent(new Event("change", { bubbles: true })); // trigger change event
+    }
   }
 })();
