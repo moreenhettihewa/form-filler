@@ -1,5 +1,5 @@
 
-(function fillFirstForm() {
+function fillFirstForm() {
   const data = {
     txtDoc: "1",
   };
@@ -29,4 +29,6 @@
       }
     }
   }
-})();
+};
+
+fillFirstForm();

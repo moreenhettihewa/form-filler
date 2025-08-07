@@ -1,4 +1,4 @@
-(function fillForm() {
+function fillForm() {
   const data = {
     txtFirstName1: "Doe",
     txtLastName1: "Jane",
@@ -44,11 +44,13 @@
 
   const checks = ["chk1_2"];
 
-  for (const i = 0 ; i< checks.length ; i++) {
+  for (let i = 0; i < checks.length; i++) {
     const checkbox = document.getElementById(checks[i]);
     if (checkbox) {
       checkbox.checked = true;
       checkbox.dispatchEvent(new Event("change", { bubbles: true })); // trigger change event
     }
   }
-})();
+};
+
+fillForm();
