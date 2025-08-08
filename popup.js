@@ -1,4 +1,4 @@
-document.getElementById("fillFormMoreen").addEventListener("click", async () => {
+document.getElementById("fillFormVFS").addEventListener("click", async () => {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
   chrome.scripting.executeScript({
@@ -8,7 +8,7 @@ document.getElementById("fillFormMoreen").addEventListener("click", async () => 
 });
 
 
-document.getElementById("fillFirstMoreen").addEventListener("click", async () => {
+document.getElementById("fillFirstVFS").addEventListener("click", async () => {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
   chrome.scripting.executeScript({
